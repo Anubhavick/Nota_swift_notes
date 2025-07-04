@@ -1,32 +1,14 @@
-//
-//  sign_up_pageApp.swift
-//  sign-up-page
-//
-//  Created by Anubhav Mishra on 04/07/25.
-//
+// In file: sign_up_pageApp.swift
 
 import SwiftUI
-import SwiftData
 
 @main
 struct sign_up_pageApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
     var body: some Scene {
         WindowGroup {
+            // This is the first view your app will load.
+            // It will handle everything else.
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
