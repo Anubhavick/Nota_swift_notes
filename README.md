@@ -59,7 +59,7 @@ To run this project locally, you will need:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+    git clone https://github.com/Anubhavick/Nota_swift_notes.git
     ```
 2.  **Open the project in Xcode:**
     *   Navigate to the cloned directory.
